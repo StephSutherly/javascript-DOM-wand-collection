@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wizarding World of Wands</title>
+
+    <script src="js/app.js"></script>
+
+    <link rel="icon" href="https://image.freepik.com/free-photo/illuminated-blue-glowing-light-magic-wand-against-black-background_23-2147880770.jpg" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+
+    <form id="new-wand-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="owner" class="primary">Owner:</label>
+          <input type="text" list="owners" id="owner" required/>
+
+          <datalist id="owners">
+            <option value="Albus Dumbledore"></option>
+            <option value="Bellatrix Lestrange"></option>
+            <option value="Cedric Diggory"></option>
+            <option value="Draco Malfoy"></option>
+            <option value="Harry Potter"></option>
+            <option value="Hermione Granger"></option>
+            <option value="James Potter"></option>
+            <option value="Minerva McGonagall"></option>
+            <option value="Ron Weasley"></option>
+            <option value="Rubeus Hagrid"></option>
+          </datalist>
+        </div>
+
+        <div class="form-item">
+          <label for="wood" class="primary">Wood:</label>
+          <input type="text" list="woods" id="wood" required/>
+
+          <datalist id="woods">
+            <option value="Vine"></option>
+            <option value="Elder"></option>
+            <option value="Walnut"></option>
+            <option value="Ash"></option>
+            <option value="Hawthorn"></option>
+            <option value="Cherry"></option>
+            <option value="Holly"></option>
+            <option value="Mahogany"></option>
+            <option value="Willow"></option>
+            <option value="Oak"></option>
+          </datalist>
+        </div>
+
+        <div class="form-item">
+          <label for="core" class="primary">Core:</label>
+          <input type="text" list="cores" id="core" required/>
+
+          <datalist id="cores">
+            <option value="Dragon Heartstring"></option>
+            <option value="Thestral Tail Hair"></option>
+            <option value="Troll Whisker"></option>
+            <option value="Unicorn Hair"></option>
+            <option value="Pheonix Feather"></option>
+          </datalist>
+        </div>
+
+        <div class="for-item">
+          <label for="length" class="primary">Length:</label>
+          <select id="length">
+            <option value="" disabled selected></option>
+            <option value="9&quot;">9"</option>
+            <option value="10&quot;">10"</option>
+            <option value="11&quot;">11"</option>
+            <option value="12&quot;">12"</option>
+            <option value="15&quot;">15"</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <input class="btn" type="submit" value="Add wand">
+    </form>
+
+    <button class="btn" id="delete-all">Delete All</button>
+
+    <h1>Wand Collection</h1>
+    <div id="wand-collection"></div>
+
+  </body>
+</html>

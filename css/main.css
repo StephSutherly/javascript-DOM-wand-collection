@@ -1,0 +1,60 @@
+body {
+  font-family: Verdana;
+  background-image: url("https://images.pexels.com/photos/258112/pexels-photo-258112.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&w=500");
+  background-size: 100%;
+  color: #ffff66;
+  text-shadow: 2px 2px #000099;
+}
+
+#wand-collection {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Apple Chancery, cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 55px;
+}
+
+.primary {
+  padding: 2px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+    margin-right: 10px:
+}
+
+input {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    background-color: #e6e6ff;
+    color: #000099;
+}
+
+#length {
+  width: 120px;
+  background-color: #e6e6ff;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 25px;
+  width: 70px;
+  text-align: left;
+  background-color: #b3b3ff;
+  color: #000099;
+}
+
+ul {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
